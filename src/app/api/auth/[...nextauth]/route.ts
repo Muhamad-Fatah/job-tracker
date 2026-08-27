@@ -8,6 +8,12 @@ const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
     }),
   ],
+  // Kalau mau custom pages
+  // tambah ini di button sign in with googlenya
+  // onClick={() => signIn("google", { callbackUrl: "/" })}
+  // pages: {
+  //   signIn: "/login",
+  // },
 };
 
 const handler = NextAuth(authOptions);
